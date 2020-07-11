@@ -95,7 +95,7 @@ if __name__ == '__main__':
     result_url_list = crawler.crawl()
     news = result_url_list
     News.save()
-    schedule.every(1).minutes.do(__name__ == '__main__')
+    schedule.every(1).minutes.do( __name__ == '__main__')
     while True:
         schedule.run_pending()
         time.sleep(1)
